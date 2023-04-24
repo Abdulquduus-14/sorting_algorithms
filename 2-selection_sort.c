@@ -28,6 +28,7 @@ void selection_sort(int *array, size_t size)
 				temp = array[j];
 				exchange = 1;
 			}
+			print_array(array, n);
 		}
 
 		if (exchange)
@@ -35,5 +36,6 @@ void selection_sort(int *array, size_t size)
 			array[min] = array[i];
 			array[i] = temp;
 		}
+
 	}
 }
