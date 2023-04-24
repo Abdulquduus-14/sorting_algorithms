@@ -32,7 +32,7 @@ void selection_sort(int *array, size_t size)
 
 		if (exchange)
 		{
-			array[min] array[i];
+			array[min] = array[i];
 			array[i] = temp;
 		}
 	}
