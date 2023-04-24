@@ -12,28 +12,18 @@
 void selection_sort(int *array, size_t size)
 {
 	size_t i, j, min;
-	int temp, exchange;
+	int temp;
 
 	for (i = 0; i < size - 1; i++)
 	{
-		exchange = 0;
 		min = i;
-		temp = array[i];
-
 		for (j = i + 1; j < size; j++)
 		{
-			if (array[j] < temp)
-			{
+			if (array[j] < array[min])
 				min = j;
-				temp = array[j];
-				exchange = 1;
-			}
 		}
-
-		if (exchange)
-		{
-			array[min] array[i];
-			array[i] = temp;
-		}
+		temp = array[min];
+		array[min] = array[i];
+		array[i] = temp;
 	}
 }
