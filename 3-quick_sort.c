@@ -42,8 +42,8 @@ void qs(int *items, size_t left, size_t right)
 			items[j] = y;
 			i++;
 			j--;
+			print_array(items, right + 1);
 		}
-		print_array(items, right + 1);
 	} while (i <= j);
 
 	if (left < j)
