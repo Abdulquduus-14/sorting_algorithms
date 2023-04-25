@@ -44,7 +44,7 @@ void qs(int *items, size_t left, size_t right)
 			j--;
 		}
 	} while (i <= j);
-	print_array(items, right + 1);
+	/* print_array(items, right + 1); */
 
 	if (left < j)
 		qs(items, left, j);
