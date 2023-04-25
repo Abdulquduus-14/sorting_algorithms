@@ -43,6 +43,7 @@ void qs(int *items, size_t left, size_t right)
 			i++;
 			j--;
 		}
+		print_array(array, right + 1);
 	} while (i <= j);
 
 	if (left < j)
